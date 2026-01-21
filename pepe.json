@@ -1,0 +1,77 @@
+[
+  {
+    "url": "assets/pepe/clasp_hands.jpeg",
+    "label": "Clasp Hands",
+    "tags": ["hands_clasped", "eyes_closed"]
+  },
+  {
+    "url": "assets/pepe/clasp_index_fingers.jpeg",
+    "label": "Clasp Index Fingers",
+    "tags": ["hands_clasped_index", "eyes_open"]
+  },
+  {
+    "url": "assets/pepe/closedeyes_tilt.jpeg",
+    "label": "Closed Eyes Tilt",
+    "tags": ["eyes_closed", "head_down"]
+  },
+  {
+    "url": "assets/pepe/cupping_hands_shouting.jpeg",
+    "label": "Cupping Hands Shouting",
+    "tags": ["hand_near_mouth", "mouth_open"]
+  },
+  {
+    "url": "assets/pepe/double_thumbs.jpeg",
+    "label": "Double Thumbs",
+    "tags": ["hand_double_thumbs"]
+  },
+  {
+    "url": "assets/pepe/hype_arm.jpeg",
+    "label": "Hype Arm",
+    "tags": ["arms_up_two", "mouth_open"]
+  },
+  {
+    "url": "assets/pepe/index_finger.jpeg",
+    "label": "Index Finger",
+    "tags": ["hand_index_finger"]
+  },
+  {
+    "url": "assets/pepe/looking_up.jpeg",
+    "label": "Looking Up",
+    "tags": ["head_up", "mouth_open"]
+  },
+  {
+    "url": "assets/pepe/middle_finger.jpeg",
+    "label": "Middle Finger",
+    "tags": ["hand_middle_finger"]
+  },
+  {
+    "url": "assets/pepe/mouth_open.jpeg",
+    "label": "Mouth Open",
+    "tags": ["mouth_open", "head_neutral", "eyes_open"]
+  },
+  {
+    "url": "assets/pepe/neutral.jpeg",
+    "label": "Neutral",
+    "tags": ["neutral"]
+  },
+  {
+    "url": "assets/pepe/punch.jpeg",
+    "label": "Punch",
+    "tags": ["hand_punch"]
+  },
+  {
+    "url": "assets/pepe/raise_hands.jpeg",
+    "label": "Raise Hands",
+    "tags": ["arms_up_two", "mouth_closed"]
+  },
+  {
+    "url": "assets/pepe/smug_thumbs.jpeg",
+    "label": "Smug Thumbs",
+    "tags": ["hand_thumbs_up"]
+  },
+  {
+    "url": "assets/pepe/smug.jpeg",
+    "label": "Smug",
+    "tags": ["hand_chin"]
+  }
+]

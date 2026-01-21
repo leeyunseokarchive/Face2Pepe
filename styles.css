@@ -1,0 +1,126 @@
+:root {
+  --bg: #000000;
+  --surface: #ffffff;
+  --text: #000000;
+  --muted: #111111;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stage {
+  position: relative;
+  width: min(90vw, 900px);
+  height: min(80vh, 600px);
+  border: 2px solid var(--surface);
+  background: var(--bg);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) minmax(280px, 1.6fr);
+  gap: 20px;
+  padding: 24px;
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.video-shell {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 2px solid var(--surface);
+  overflow: hidden;
+  background: #000000;
+}
+
+#video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+
+#debug-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transform: scaleX(-1);
+}
+
+.hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--surface);
+}
+
+.meme-frame {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+#meme {
+  width: min(360px, 80%);
+  height: min(360px, 80%);
+  object-fit: contain;
+  opacity: 1;
+  transform: none;
+  border: 2px solid var(--surface);
+  background: #000000;
+}
+
+
+.debug {
+  position: absolute;
+  bottom: 18px;
+  left: 24px;
+  padding: 10px 14px;
+  background: var(--surface);
+  color: var(--text);
+  border: 2px solid var(--surface);
+  font-size: 0.9rem;
+}
+
+.debug p {
+  margin: 4px 0;
+}
+
+@media (max-width: 640px) {
+  .stage {
+    width: 92vw;
+    height: 80vh;
+    padding: 18px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .debug {
+    left: 16px;
+    right: 16px;
+    font-size: 0.8rem;
+  }
+
+  .preview {
+    width: 100%;
+  }
+}

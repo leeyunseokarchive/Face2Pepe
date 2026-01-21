@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Face2Pepe</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+  </head>
+  <body>
+    <main class="stage">
+      <section class="preview">
+        <div class="video-shell">
+          <video id="video" playsinline muted></video>
+          <canvas id="debug-canvas"></canvas>
+        </div>
+      </section>
+      <section class="meme-frame">
+        <img id="meme" alt="Pepe meme" />
+      </section>
+      <div class="debug">
+        <p id="status">Loading webcam...</p>
+        <p id="emotion">Face: -</p>
+        <p id="action">Hand: -</p>
+        <p id="mouth">Mouth: -</p>
+        <p id="eyes">Eyes: -</p>
+        <p id="head">Head: -</p>
+        <p id="arms">Arms: -</p>
+        <p id="hand">Hand: -</p>
+      </div>
+    </main>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
