@@ -11,8 +11,6 @@ export function inferFaceStates(features) {
     headState = "up";
   } else if (adjustedPitch > 0.1) {
     headState = "down";
-  } else if (Math.abs(head.yaw) > 0.12 || Math.abs(head.roll) > 0.2) {
-    headState = "side";
   }
 
   return {

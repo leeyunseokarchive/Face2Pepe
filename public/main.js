@@ -19,7 +19,6 @@ const canvasCtx = canvasEl.getContext("2d");
 const debugEnabled = true;
 
 const stabilityWindowMs = 0;
-const cooldownMs = 0;
 const eyesClosedDelayMs = 200;
 
 let lastStableTags = ["neutral"];
@@ -147,8 +146,6 @@ function onFrameResults() {
     tags.add("head_up");
   } else if (faceStates.head === "down") {
     tags.add("head_down");
-  } else if (faceStates.head === "side") {
-    tags.add("head_side");
   } else {
     tags.add("head_neutral");
   }
